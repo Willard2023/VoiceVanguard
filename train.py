@@ -17,9 +17,9 @@ from transformers import (
     set_seed,
 )
 
-from metric import Metrics
-from audio_model import Model
-from dataset import Dataset, collate_fn
+from model.metric import Metrics
+from model.model import Model
+from model.dataset import Dataset, collate_fn
 
 def parse_args():
     parser = argparse.ArgumentParser()
